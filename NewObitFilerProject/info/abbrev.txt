@@ -1,0 +1,805 @@
+The following abbreviations can be for Country, County, State, Political or Geographical region.
+
+Some abbreviations can be used for more than one Country, so be careful when choosing your abbreviation.
+
+There are no city abbreviations except as marked (city). There are others marked (state) or (county) when necessary to distinguish between them.
+
+How to use:
+Include the abbreviation for the State, County, Political or Geographical region together with the Country abbreviation.
+EXCEPTIONS: In the case of the United States, only use the State's abbreviation, and in the case of Canada, only use the Province when given.
+
+Location/Meaning -> Abbreviation
+------------------------------------------------------
+Aargau - AG CHE
+Aberdeenshire - ABD SCT
+Acadia - ACA
+Aelvsborg - AEL SWE
+Afghanistan - AFG
+Aguascalientes - AGU MEX
+Akershus - AK NOR
+Alabama - AL
+Alaska - AK
+Albania - ALB
+Alberta - AB
+Alderney - ALD CHI
+Algeria - DZA
+Alsace France - ELS FRA
+Alsace Germany - ELS DEU
+Alsace-Lorraine France - ELS-LOT FRA
+Alsace-Lorraine Germany - ELS-LOT DEU
+Alvsborg - AEL SWE
+American Samoa - AS
+American Samoa - ASM
+Andorra - AND
+Anglesey - AGY WLS
+Angola - AGO
+Anguilla - AIA
+Angus - ANS SCT
+Anhalt - ANH DEU
+Anhalt-Bernburg - ANB ANH DEU
+Anhalt-Dessau - AND ANH DEU
+Anhalt-Koethen - ANK ANH DEU
+Antarctica - ATA
+Antigua & Barbuda - ATG
+Antrim - ANT NIR
+Appenzell (Ausser Rhoden) - AR CHE
+Appenzell (Inner Rhoden) - AI CHE
+Argentina - ARG
+Argyllshire - ARL SCT
+Arizona - AZ
+Arkansas - AR
+Armagh - ARM NIR
+Armenia - ARM
+Aruba - ABW
+Asia Minor (now Turkey) - TUR
+Aust-Agder - AA NOR
+Australia - AUS
+Austialia Capital Territory - ACT AUS
+Austria - AUT
+Austria Lower - NOE AUT
+Austria Upper - OOE AUT
+Avon - AVN ENG
+Ayrshire - AYR SCT
+Azerbaijan - AZE
+Azores - AZR
+Baden - BAD DEU
+Baden-Wuerttemberg - BAD-WUE DEU
+Baden-Wurttemberg - BAD-WUE DEU
+Bahamas - BHS
+Bahrain - BHR
+Baja California - BAJ MEX
+Baja California Sur - BAS MEX
+Banffshire - BAN SCT
+Bangladesh - BGD
+Barbados - BRB
+Basel-Landschaft - BL CHE
+Basel-Stadt - BS CHE
+Basle (city) - BS CHE
+Basle (state) - BL CHE
+Bavaria - BAY DEU
+Bayern - BAY DEU
+Bedfordshire - BDF ENG
+Belarus - BLR
+Belau - PLW
+Belgium - BEL
+Belize - BLZ
+Benin - BEN
+Berkshire - BRK ENG
+Berlin (Land in Bundesrepublik) - BER DEU
+Berlin Stadt (city) - BER PRU DEU
+Bermuda - BMU
+Bern/Berne - BE CHE
+Berwickshire - BEW SCT
+Bhutan - BTN
+Blekinge - BLK SWE
+Boehmen - BOH AUT
+Bohemia - BOH AUT
+Bolivia - BOL
+Bosnia and Herzegovinia - BIH
+Botswana - BWA
+Bouvet Island - BVT
+Brandenburg - BRG DEU
+Braunschweig - BRU DEU
+Brazil - BRA
+Breconshire - BRE WLS
+Breisgau - BRS BAD DEU
+Bremen - BRE DEU
+British Columbia - BC
+British Indian Ocean Territory - IOT
+Brunei Darussalam - BRN
+Brunswick - BRU DEU
+Buckinghamshire - BKM ENG
+Bulgaria - BGR
+Burgenland - BUR AUT
+Burkina Faso - BFA
+Burma - MMR
+Burundi - BDI
+Buskerud - BU NOR
+Bute - BUT SCT
+Caernarvonshire - CAE WLS
+Caithness - CAI SCT
+California - CA
+Cambodia - KHM
+Cambridgeshire - CAM ENG
+Cameroon - CMR
+Campeche - CAM MEX
+Canada - CAN
+Cape Colony - CAP
+Cape Verde - CPV
+Cardiganshire - CBN WLS
+Carinthia - KAE AUT
+Carlow - CAR IRL
+Carmarthenshire - CMN WLS
+Carniola - KRA AUT
+Cavan - CAV IRL
+Cayman Islands - CYM
+Central African Republic - CAF
+Chad - TCD
+Channel Islands - CHI UK
+Cheshire - CHS ENG
+Chiapas - CHI MEX
+Chihuahua - CHA MEX
+Chile - CHL
+China - CHN
+Christmas Island - CXR
+Clackmannanshire - CLK SCT
+Clare - CLA IRL
+Cleveland - CLV ENG
+Clwyd - CWD WLS
+Coahuila - COA MEX
+Cocos (Keeling) Islands - CCK
+Colima - COL MEX
+Colombia - COL
+Colorado - CO
+Comoros - COM
+Congo - COG
+Connaught - CNN IRL
+Connecticut - CT
+Cook Islands - COK
+Cork - COR IRL
+Cornwall - CON ENG
+Costa Rica - CRI
+Cote D'Ivoire - CIV
+Croatia - HRV
+Cuba - CUB
+Cumberland - CUL ENG
+Cumbria - CMA ENG
+Cyprus - CYP
+Czech Republic - CZE
+Czechoslovakia - CSK
+Delaware - DE
+Denbighshire - DEN WLS
+Denmark - DNK
+Derbyshire - DBY ENG
+Derry - LDY NIR
+Devon or Devonshire - DEV ENG
+District of Columbia - DC
+Distrito Federal (Federal District) - DF MEX
+Djibouti - DJI
+Dominica - DMA
+Dominican Republic - DOM
+Donegal - DON IRL
+Dorset - DOR ENG
+Down - DOW NIR
+Dublin - DUB IRL
+Dumfriesshire - DFS SCT
+Dunbartonshire - DNB SCT
+Durango - DUR MEX
+Durham - DUR ENG
+Dyfed - DFD WLS
+East Anglia - EAG ENG
+East Lothian - ELN SCT
+East Prussia - OPRU DEU
+East Riding - ERY ENG
+East Sussex - SXE ENG
+East Timor - TMP
+East Yorkshire - EYK ENG
+Ecuador - ECU
+Egypt - EGY
+El Salvador - SLV
+Elsass France - ELS FRA
+Elsass Germany - ELS DEU
+Elsass-Lothringen Germany - ELS-LOT DEU
+Elsass-Lothringen France - ELS-LOT FRA
+England - ENG
+Equatorial Guinea - GNQ
+Eritrea - ERI
+Essex - ESS ENG
+Estonia - EST
+Ethiopia - ETH
+Falkland Islands (Malvinas) - FLK
+Faroe Islands - FRO
+Fermanagh - FER NIR
+Fifeshire - FIF SCT
+Fiji - FJI
+Finland - FIN
+Finnmark - FI NOR
+Flanders - FLD
+Flint - FLN WLS
+Florida - FL
+France - FRA
+Franconia - FRN BAY DEU
+Franken - FRN BAY DEU
+Frankfurt/Main - FRK DEU
+Freiburg - FR CHE
+French Guiana - GUF
+French Polynesia - PYF
+French Southern Territories - ATF
+Fribourg - FR CHE
+Gabon - GAB
+Gaevleborg - GVL SWE
+Galicia - GAI AUT
+Galizien - GAI AUT
+Galway - GAL IRL
+Gambia - GMB
+Gavleborg - GVL SWE
+Geneva - GE CHE
+Geneve - GE CHE
+Genf - GE CHE
+Georgia (country) - GEO
+Georgia - GA
+Germany - DEU
+Ghana - GHA
+Gibraltar - GIB
+Glamorganshire/Glamorgan - GLA WLS
+Glarus - GL CHE
+Gloucestershire - GLS ENG
+Goeteborg & Bohus - GTB SWE
+Gotland - GOT SWE
+Grampian - GMP SCT
+Graubunden - GR CHE
+Great Britain - GBR
+Greece - GRC
+Greenland - GRL
+Grenada - GRD
+Grisons - GR CHE
+Guadeloupe - GLP
+Guam - GU
+Guam - GUM
+Guanajuato - GTO MEX
+Guatemala - GTM
+Guernsey - GSY CHI
+Guerrero - GRO MEX
+Guinea - GIN
+Guinea-Bissau - GNB
+Guyana - GUY
+Gwent - GNT WLS
+Gwynedd - GYN WLS
+Haiti - HTI
+Halland - HAL SWE
+Hamburg - HAM DEU
+Hampshire - HAM ENG
+Hannover - HAN DEU
+Hanover - HAN DEU
+Hawaii - HI
+Heard & McDonald Islands - HMD
+Hedmark - HE NOR
+Herefordshire - HEF ENG
+Hertfordshire - HRT ENG
+Hesse - HES DEU
+Hesse-Darmstadt - HD HES DEU
+Hesse-Kassel/Electorate - HK HES DEU
+Hessen - HES DEU
+Hessen-Darmstadt - HD HES DEU
+Hessen-Homburg - HOM HES DEU
+Hessen-Kassel - HK HES DEU
+Hidalgo - HID MEX
+Highlands - HIL SCT
+Hohenzollern - HOH DEU
+Holland - HOL
+Holstein Germany - HOS SCN DEU
+Holstein Denmark - HOS SCN DNK
+Honduras - HND
+Hong Kong - HKG
+Hordaland - HO NOR
+Humberside - HUM ENG
+Hungary - HUN
+Huntingdonshire - HUN ENG
+Iceland - ISL
+Idaho - ID
+Illinois - IL
+India - IND
+Indian Territory Oklahoma - IT
+Indiana - IN
+Indonesia - IDN
+Inverness-shire - INV SCT
+Iowa - IA
+Iran - IRN
+Iraq - IRQ
+Ireland - IRL
+Isle of Man - IOM UK
+Isle of Wight - IOW ENG
+Israel - ISR
+Italy - ITA
+Jaemtland - JMT SWE
+Jalisco - JAL MEX
+Jamaica - JAM
+Japan - JPN
+Jersey - JSY CHI
+Joenkoeping - JNK SWE
+Jordan - JOR
+Jura - JU CHE
+Kaernten - KAE AUT
+Kalmar - KLM SWE
+Kansas - KS
+Kazakhstan - KAZ
+Kent - KEN ENG
+Kentucky - KY
+Kenya - KEN
+Kerry - KER IRL
+Kildare - KID IRL
+Kilkenny - KIK IRL
+Kincardineshire - KCD SCT
+Kings - OFF IRL
+Kinross-shire - KRS SCT
+Kiribati - KIR
+Kirkcudbrightshire - KKD SCT
+Kopparberg - KPR SWE
+Korea Dem. People's Rep. (North) - PRK
+Korea Republic of (South) - KOR
+Krain - KRA AUT
+Kristianstad - KST SWE
+Kronoberg - KRN SWE
+Kurhessen - HK HES DEU
+Kuwait - KWT
+Kyrgyzstan - KGZ
+Labrador - see Newfoundland & Labrador
+Lanarkshire - LKS SCT
+Lancashire - LAN ENG
+Laos - LAO
+Latvia - LVA
+Lauenburg Germany - LAU DEU
+Lauenburg Denmark - LAU DNK
+Lebanon - LBN
+Leicestershire - LEI ENG
+Leinster - LEN IRL
+Leitrim - LET IRL
+Leix - LEX IRL
+Lesotho - LSO
+Liberia - LBR
+Libyan Arab Jamahiriya - LBY
+Liechtenstein - LIE
+Limerick - LIM IRL
+Lincolnshire - LIN ENG
+Lippe-Detmold - LPD DEU
+Lithuania - LTU
+London - LND ENG
+Londonderry - LDY NIR
+Longford - LOG IRL
+Lorraine France - LOT FRA
+Lorraine Germany - LOT DEU
+Lothian - LTN SCT
+Lothringen France - LOT FRA
+Lothringen Germany - LOT DEU
+Louisiana - LA
+Louth - LOU IRL
+Lower Austria - NOE AUT
+Lower Saxony - NSAC DEU
+Lucerne - LU CHE
+Luebeck - LUB DEU
+Luxembourg - LUX
+Luzern - LU CHE
+Macau - MAC
+Macedonia - MKD
+Madagascar - MDG
+Maehren - MAE AUT
+Maine - ME
+Malawi - MWI
+Malaysia - MYS
+Maldives - MDV
+Mali - MLI
+Malmoehus - MLM SWE
+Malta - MLT
+Man Isle of - IOM UK
+Manitoba - MB
+Marshall Islands - MH
+Marshall Islands - MHL
+Martinique - MTQ
+Maryland - MD
+Massachusetts - MA
+Mauritania - MRT
+Mauritius - MUS
+Mayo - MAY IRL
+Mayotte - MYT
+Meath - MEA IRL
+Mecklenburg - MEC DEU
+Mecklenburg-Hither Pomerania - MEC-VPOM DEU
+Mecklenburg-Schwerin - MSC MEC DEU
+Mecklenburg-Strelitz - MST MEC DEU
+Mecklenburg-Vorpommern - MEC-VPOM DEU
+Mecklenburg-Western Pomerania - MEC-VPOM DEU
+Mercia - MCA ENG
+Merionethshire - MER WLS
+Merseyside - MSY ENG
+Mexico - MEX
+Mexico (State) - MEX MEX
+Michigan - MI
+Michoacan - MIC MEX
+Micronesia - FSM
+Mid-Glamorgan - MGM WLS
+Middlesex - MDX ENG
+Midlands - MID ENG
+Midlothian - MLN SCT
+Minnesota - MN
+Mississippi - MS
+Missouri - MO
+Moere og Romsdal - MR NOR
+Moldava - MDA
+Monaco - MCO
+Monaghan - MOG IRL
+Mongolia - MNG
+Monmouthshire - MON WLS
+Montana - MT
+Montgomeryshire - MGY WLS
+Montserrat - MSR
+Moravia - MAE AUT
+Moray - MOR SCT
+Morelos - MOR MEX
+Morocco - MAR
+Mozambique - MOZ
+Munster - MUN IRL
+Myanmar - MMR
+Nairnshire - NAI SCT
+Namibia - NAM
+Nassau - NAS DEU
+Nauru - NRU
+Nayarit - NAY MEX
+Nebraska - NE
+Nepal - NPL
+Netherlands - NLD
+Netherlands Antilles - ANT
+Neuchatel - NE CHE
+Neuenberg - NE CHE
+Neutral Zone - NTZ
+Nevada - NV
+New Brunswick - NB
+New Caledonia - NCL
+New Hampshire - NH
+New Jersey - NJ
+New Mexico - NM
+New South Wales - NSW AUS
+New York - NY
+New Zealand - NZL
+Newfoundland - NF
+Newfoundland & Labrador - NL
+Nicaragua - NIC
+Nidwalden - NW CHE
+Niederoesterreich - NOE AUT
+Niedersachsen - NSAC DEU
+Niger - NER
+Nigeria - NGA
+Niue - NIU
+Nord-Norge - NNO NOR
+Nord-Troendelag - NT NOR
+Nordland - NO NOR
+Nordrhein-Westfalen - NRHE-WFA DEU
+Norfolk - NFK ENG
+Norrbotten - NRB SWE
+North Carolina - NC
+North Dakota - ND
+North Rhine-Westphalia - NRHE-WFA DEU
+North Riding - NRY ENG
+North Wales - NWL WLS
+North Yorkshire - NYK ENG
+Northampton - NTH ENG
+Northern Ireland - NIR
+Northern Mariana Islands - MP
+Northern Mariana Islands - MNP
+Northern Territory - NT AUS
+Northumberland - NBL ENG
+Northwest Territories - NT
+Norway - NOR
+Nottinghamshire - NTT ENG
+Nova Scotia - NS
+Nuevo Leon - NL MEX
+Nunavut - NU
+Oaxaca - OAX MEX
+Oberoesterreich - OOE AUT
+Oberpfalz - OBP BAY DEU
+Obwalden - OW CHE
+Oerebro - OER SWE
+Oestergoetland - OEG SWE
+Oesterreich - AUT
+Oestfold - OES NOR
+Oestlandet - OEST NOR
+Offaly - OFF IRL
+Ohio - OH
+Oklahoma - OK
+Oldenburg - OLD DEU
+Oman - OMN
+Ontario - ON
+Oppland - OP NOR
+Orebro - OER SWE
+Oregon - OR
+Orkney Isles - OKI SCT
+Oslo - OS NOR
+Ostergoetland - OEG SWE
+Ostfold - OES NOR
+Ostlandet - OEST NOR
+Ostpreussen - OPRU DEU
+Oxfordshire - OXF ENG
+Pakistan - PAK
+Palatinate - PFA BAY DEU
+Palestine - PSE
+Palau - PLW
+Panama - PAN
+Papua New Guinea - PNG
+Paraguay - PRY
+Peebleshire - PEE SCT
+Pembrokeshire - PEM WLS
+Pennsylvania - PA
+Perthshire - PER SCT
+Peru - PER
+Pfalz - PFA BAY DEU
+Philippines - PHL
+Pitcairn - PCN
+Poland - POL
+Pomerania - POM PRU DEU
+Pommern - POM PRU DEU
+Portugal - PRT
+Posen - POS PRU DEU
+Powys - POW WLS
+Pozna'n - POS PRU DEU
+Preussen - PRU DEU
+Prince Edward Island - PE
+Prussia - PRU DEU
+Puebla - PUE MEX
+Puerto Rico - PR
+Qatar - QAT
+Quebec - QC
+Queens - LEX IRL
+Queensland - QLD AUS
+Queretaro - QUE MEX maybe QRO MEX
+Quintana Roo - QUI MEX
+Radnorshire - RAD WLS
+Renfrewshire - RFW SCT
+Reunion - REU
+Reuss "altere Linie (Greiz) - AL RES DEU
+Reuss - RES DEU
+Reuss j"ungere Linie - JL RES DEU
+Reuss-Ebersdorf (junior line) - JL RES DEU
+Reuss-Greiz (elder line) - AL RES DEU
+Reuss-Lobenstein (junior line) - JL RES DEU
+Reuss-Schleiz (junior line) - JL RES DEU
+Rheinland-Pfalz - RHE-PFA DEU
+Rheinland or Rhineland - RHE PRU DEU
+Rhineland-Palatinate - RHE-PFA DEU
+Rhode Island - RI
+Rhodesia - RHO
+Rogaland - RO NOR
+Romania - ROM
+Roscommon - ROS IRL
+Ross & Cromarty - ROC SCT
+Roxburghshire - ROX SCT
+Russia - RUS
+Rutland - RUT ENG
+Rwanda - RWA
+Saarland - SAA DEU
+Sachsen (Kgr. / Land in Bundesrepublik) - SAC DEU
+Sachsen (Provinz) - SAC PRU DEU
+Sachsen-Altenburg - SXA THE DEU
+Sachsen-Anhalt - SAC-ANH
+Sachsen-Coburg und Gotha - SXC THE DEU
+Sachsen-Coburg-Saalfeld - SXC THE DEU
+Sachsen-Gotha-Altenburg - SXG THE DEU
+Sachsen-Hildburghausen - SXH THE DEU
+Sachsen-Meiningen - SXM THE DEU
+Sachsen-Weimar - SXW THE DEU
+Saint Gall - SG CHE
+Saint Helena - SHN
+Saint Kitts and Nevis - KNA
+Saint Lucia - LCA
+Saint Pierre and Miquelon - SPM
+Saint Vincent & Grenadines - VCT
+Salzburg - SAB AUT
+Samoa - WSM
+San Luis Potosi - SLP MEX
+San Marino - SMR
+Sankt Gallen - SG CHE
+Sao Tome and Principe - STP
+Sark - SRK CHI
+Saskatchewan - SK
+Saudi Arabia - SAU
+Saxe-Altenburg - SXA THE DEU
+Saxe-Coburg-Gotha - SXC THE DEU
+Saxe-Coburg-Saalfeld - SXC THE DEU
+Saxe-Gotha-Altenburg - SXG THE DEU
+Saxe-Hildburghausen - SXH THE DEU
+Saxe-Meiningen - SXM THE DEU
+Saxe-Weimar - SXW THE DEU
+Saxony (Kingdom/State) - SAC DEU
+Saxony (Prussian Province) - SAC PRU DEU
+Saxony-Anhalt - SAC-ANH DEU
+Schaffhausen - SH CHE
+Schaumburg-Lippe - SLP DEU
+Schlesien Austria - SCI AUT
+Schlesien Germany - SCI PRU DEU
+Schleswig Germany - SCL SCN DEU
+Schleswig Denmark - SCL SCN DNK
+Schleswig-Holstein - SCN DEU
+Schwarzburg - SCH DEU
+Schwarzburg-Rudolstadt - RUD SCH DEU
+Schwarzburg-Sondershausen - SON SCH DEU
+Schwyz - SZ CHE
+Scotland - SCT
+Selkirkshire - SEL SCT
+Senegal - SEN
+Serbia - SER
+Serbia Yugoslavia - SER YUG
+Seychelles - SYC
+Shetland Isles - SHI SCT
+Shropshire - SAL ENG
+Sicily - SIC
+Sierra Leone - SLE
+Silesia Austria - SCI AUT
+Silesia Germany - SCI PRU DEU
+Sinaloa - SIN MEX
+Singapore - SGP
+Skaraborg - SKR SWE
+Sligo - SLI IRL
+Slovakia - SVK
+Slovenia - SVN
+Soedermanland - SDR SWE
+Soer-Troendelag - ST NOR
+Soerlandet - SOER NOR
+Sogn og Fjordane - SF NOR
+Solomon Islands - SLB
+Solothurn - SO CHE
+Somalia - SOM
+Somerset - SOM ENG
+Sonora - SON MEX
+South Africa - ZAF
+South Australia - SA AUS
+South Carolina - SC
+South Dakota - SD
+South Georgia - SGS
+South Sandwich Islands - SGS
+South Wales - SWL WLS
+South Yorkshire - SYK ENG
+Spain - ESP
+Sri Lanka - LKA
+Staffordshire - STS ENG
+Steiermark - STE AUT
+Stirlingshire - STI SCT
+Stockholm (city) - STK SWE
+Stockholm (county) - STL SWE
+Strathclyde - STD SCT
+Styria - STE AUT
+Sudan - SDN
+Sudetenland Austria - SUD AUT
+Sudetenland Czechoslovakia - SUD CSK
+Suffolk - SFK ENG
+Sundgau - SUN AUT
+Suriname - SUR
+Surrey - SRY ENG
+Sussex - SSX ENG
+Sutherland - SUT SCT
+Svalbard & Jan Mayen Islands - SJM
+Swaziland - SWZ
+Sweden - SWE
+Switzerland - CHE
+Syrian Arab Republic - SYR
+Tabasco - TAB MEX
+Taiwan Province of China - TWN
+Tajikistan - TJK
+Tamaulipas - TAM MEX
+Tanzania  United Republic of - TZA
+Tasmania - TAS AUS
+Tayside - TAY SCT
+Telemark - TE NOR
+Tennessee - TN
+Tessin - TI CHE
+Texas - TX
+Thailand - THA
+Thueringen - THE DEU
+Thurgau - TG CHE
+Thuringia - THE DEU
+Ticino - TI CHE
+Tipperary - TIP IRL
+Tirol - TIR AUT
+Tlaxcala - TLA MEX
+Togo - TGO
+Tokelau - TKL
+Tonga - TON
+Transylvania - TRN
+Trinidad and Tobago - TTO
+Troendelag - TROE NOR
+Troms - TR NOR
+Tunisia - TUN
+Turkey - TUR
+Turkmenistan - TKM
+Turks and Caicos Islands - TCA
+Tuvalu - TUV
+Tyne & Wear - T&W ENG
+Tyrol - TIR AUT
+Tyrone - TYR NIR
+USSR - SUN
+Uganda - UGA
+Ukraine - UKR
+Ulster - UGB NIR
+Ulster County Ireland - UIE IRL
+United Arab Emirates - ARE
+United Empire Loyalist - UEL
+United Kingdom - UK
+United States of America - USA
+Upper Austria - OOE AUT
+Upper Palatinate - OBP BAY DEU
+Uppsala - UPP SWE
+Uri - UR CHE
+Uruguay - URY
+Utah - UT
+Uzbekistan - UZB
+Vaermland - VRM SWE
+Vaesterbotten - VBT SWE
+Vaesternorrland - VNR SWE
+Vaestmanland - VMN SWE
+Valais - VS CHE
+Vanuatu - VUT
+Varmland - VRM SWE
+Vasterbotten - VBT SWE
+Vasternorrland - VNR SWE
+Vastmanland - VMN SWE
+Vatican City State - VAT
+Vaud - VD CHE
+Venezuela - VEN
+Veracruz - VER MEX
+Vermont - VT
+Vest-Agder - VA NOR
+Vestfold - VE NOR
+Vestlandet - VES NOR
+Victoria - VIC AUS
+Vienna - WIE AUT
+Viet Nam (Vietnam) - VNM
+Virgin Islands - VI
+Virgin Islands UK - VGB
+Virginia - VA
+Vorarlberg - VOR AUT
+Waadt - VD CHE
+Waldeck - WAL DEU
+Waldeck und Pyrmont - WAL DEU
+Wales - WLS
+Wallis & Futana Islands - WLF
+Wallis - VS CHE
+Warwickshire - WAR ENG
+Washington - WA
+Waterford - WAT IRL
+Wessex - WSX ENG
+West Lothian - WLN SCT
+West Midlands - WMD ENG
+West Prussia - WPRU DEU
+West Riding - WRY ENG
+West Sussex - SXW ENG
+West Virginia - WV
+West Yorkshire - WYK ENG
+Western Australia - WA AUS
+Western Isles - WIS SCT
+Western Sahara - ESH
+Western Samoa - ESM
+Westfalen - WFA PRU DEU
+Westmeath - WEM IRL
+Westmoreland - WES ENG
+Westphalia - WFA PRU DEU
+Westpreussen - WPRU DEU
+Wexford - WEX IRL
+Wicklow - WIC IRL
+Wien - WIE AUT
+Wight  Isle of - IOW ENG
+Wigtownshire - WIG SCT
+Wiltshire - WIL ENG
+Wisconsin - WI
+Worcestershire - WOR ENG
+Wuerttemberg - WUE DEU
+Wurttemberg - WUE DEU
+Wyoming - WY
+Yemen  Republic of - YEM
+Yorkshire - YKS ENG
+Yucatan - YUC MEX
+Yugoslavia - YUG
+Yukon Territory - YT
+Zacatecas - ZAC MEX
+Zaire - ZAR
+Zambia - ZMB
+Zimbabwe - ZWE
+Zuerich - ZH CHE
+Zug - ZG CHE
+Zurich - ZH CHE
