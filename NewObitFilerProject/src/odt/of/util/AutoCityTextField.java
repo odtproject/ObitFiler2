@@ -1,13 +1,14 @@
 package odt.of.util;
-import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 
+import javax.swing.JTextField;
+
 import odt.of.main.ObituaryFiler;
 
 public class AutoCityTextField
-  extends TextField
+  extends JTextField
 {
   /**
 	 * 

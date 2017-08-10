@@ -1,13 +1,14 @@
 package odt.of.util;
 import java.awt.List;
-import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
+import javax.swing.JTextField;
 
 import odt.of.main.ObituaryFiler;
 
 public class CapitalizedTextField
-  extends TextField
+  extends JTextField
 {
   /**
 	 * 
@@ -28,6 +29,7 @@ public class CapitalizedTextField
   {
     ObituaryFiler app;
     int id;
+	private boolean consumeKey;
     
     public CapitalizedTextKeyAdapter(ObituaryFiler paramObituaryFiler, int paramInt)
     {
@@ -35,8 +37,18 @@ public class CapitalizedTextField
       this.id = paramInt;
     }
     
+	public void keyTyped(KeyEvent paramKeyEvent)
+	{
+		if ( isConsumeKey() )
+		{
+			paramKeyEvent.consume();
+		}
+	}
+    
     public void keyPressed(KeyEvent paramKeyEvent)
     {
+		setConsumeKey(false);
+
       char c1 = paramKeyEvent.getKeyChar();
       if ((c1 == ',') || (c1 == ';') || (c1 == '.') || ((c1 == '"') && (!CapitalizedTextField.this.allowQuotes)))
       {
@@ -79,10 +91,24 @@ public class CapitalizedTextField
         }
       }
       localObject = str1.substring(0, j);
+
       String str2 = str1.substring(k, str1.length());
-      CapitalizedTextField.this.setText((String)localObject + c2 + str2);
+      String str3 = (String)localObject + c2 + str2;
+      CapitalizedTextField.this.setText("");
+      CapitalizedTextField.this.setText(str3);
+//      CapitalizedTextField.this.setText((String)localObject + c2 + str2);
       CapitalizedTextField.this.setCaretPosition(j + 1);
-      paramKeyEvent.consume();
+      
+		setConsumeKey(true);
+		paramKeyEvent.consume();
     }
+
+	public boolean isConsumeKey() {
+		return consumeKey;
+	}
+
+	public void setConsumeKey(boolean consumeKey) {
+		this.consumeKey = consumeKey;
+	}
   }
 }

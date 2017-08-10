@@ -6,7 +6,7 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.Label;
 import java.awt.Panel;
-import java.awt.TextField;
+import javax.swing.JTextField;
 
 import odt.of.main.ObituaryFiler;
 import odt.of.util.AutoCityTextField;
@@ -25,7 +25,7 @@ class TextPanel
 	static final String[] fieldNames = { "Last Name", "First and Middle Names", "Maiden Name", "Other Last Names", "Nickname", "Age", "City of Birth", "State/Country of Birth", "City of Death", "State/Country of Death" };
 	ObituaryFiler app;
 	Label[] label;
-	TextField[] field;
+	JTextField[] field;
 	Checkbox aCCheckbox;
   
 	public void updateConfigChanges()
@@ -49,7 +49,7 @@ class TextPanel
 	{
 		this.app = paramObituaryFiler;
 		this.label = new Label[10];
-		this.field = new TextField[10];
+		this.field = new JTextField[10];
 		this.aCCheckbox = new Checkbox();
 		GridBagLayout localGridBagLayout = new GridBagLayout();
 		setLayout(localGridBagLayout);

@@ -1,10 +1,11 @@
 package odt.of.util;
-import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import javax.swing.JTextField;
+
 public class DigitOnlyTextField
-  extends TextField
+  extends JTextField
 {
   /**
 	 * 
@@ -29,5 +30,14 @@ public class DigitOnlyTextField
         paramKeyEvent.consume();
       }
     }
+    
+    public void keyTyped(KeyEvent paramKeyEvent)
+    {
+      char c = paramKeyEvent.getKeyChar();
+      if ((!Character.isDigit(c)) && (Character.getType(c) != Character.CONTROL)) {
+        paramKeyEvent.consume();
+      }
+    }
+
   }
 }

@@ -6,9 +6,10 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.Label;
-import java.awt.TextField;
 import java.awt.Toolkit;
 import java.util.Vector;
+
+import javax.swing.JTextField;
 
 import odt.of.main.ObitEntryConfig;
 import odt.of.util.DigitOnlyTextField;
@@ -25,7 +26,7 @@ class GeneralConfigPanel
 	static final int LISTENTRIES = 2;
 	static final int TEXT_FIELDS = 3;
 	static final String[] fieldNames = { "Tagname", "Font Size", "Visible Entries in Lists" };
-	TextField[] fields;
+	JTextField[] fields;
 	Choice fontNameChoice;
 	EditConfigDialog dialog;
   
@@ -51,7 +52,7 @@ class GeneralConfigPanel
 	public GeneralConfigPanel(EditConfigDialog paramEditConfigDialog)
 	{
 		this.dialog = paramEditConfigDialog;
-		this.fields = new TextField[3];
+		this.fields = new JTextField[3];
 		GridBagLayout localGridBagLayout = new GridBagLayout();
 		setLayout(localGridBagLayout);
 		GridBagConstraints localGridBagConstraints = new GridBagConstraints();
@@ -64,7 +65,7 @@ class GeneralConfigPanel
 			add(localLabel = new Label(fieldNames[i], 0));
 			localGridBagConstraints.gridwidth = -1;
 			localGridBagLayout.setConstraints(localLabel, localGridBagConstraints);
-			add(this.fields[i] = new TextField("", 20));
+			add(this.fields[i] = new JTextField("", 20));
 			this.fields[i].addKeyListener(new DialogCommandListener(paramEditConfigDialog, i));
 			localGridBagConstraints.gridwidth = 0;
 			localGridBagLayout.setConstraints(this.fields[i], localGridBagConstraints);
