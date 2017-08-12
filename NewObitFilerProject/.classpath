@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="/Users/alice/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02.jar"/>
-	<classpathentry kind="lib" path="/Users/alice/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-javadoc.jar"/>
-	<classpathentry kind="lib" path="/Users/alice/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

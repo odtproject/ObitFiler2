@@ -1,14 +1,13 @@
 package odt.of.util;
+import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 
-import javax.swing.JTextField;
-
 import odt.of.main.ObituaryFiler;
 
 public class AutoCityTextField
-  extends JTextField
+  extends TextField
 {
   /**
 	 * 
@@ -25,12 +24,28 @@ public class AutoCityTextField
     	extends KeyAdapter
     {
 		ObituaryFiler app;
+		private boolean consumeKey;
     
 		public AutoCityWordCapitalizedTextKeyAdapter(ObituaryFiler paramObituaryFiler)
 		{
 			this.app = paramObituaryFiler;
 		}
     
+		public void keyTyped(KeyEvent paramKeyEvent)
+		{
+			if ( isConsumeKey() )
+			{
+				paramKeyEvent.consume();
+			}
+		}
+	 
+		public void keyReleased(KeyEvent paramKeyEvent)
+		{
+			if ( isConsumeKey() )
+			{
+				paramKeyEvent.consume();
+			}
+		}
 		public void keyPressed(KeyEvent paramKeyEvent)
 		{
 			String str1 = AutoCityTextField.this.getText();
@@ -86,5 +101,14 @@ public class AutoCityTextField
 			}
 			paramKeyEvent.consume();
 		}
+		
+		public boolean isConsumeKey() {
+			return consumeKey;
+		}
+
+		public void setConsumeKey(boolean consumeKey) {
+			this.consumeKey = consumeKey;
+		}
+
     }
 }

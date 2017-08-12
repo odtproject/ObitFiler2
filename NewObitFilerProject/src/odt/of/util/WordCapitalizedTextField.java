@@ -1,11 +1,10 @@
 package odt.of.util;
+import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-import javax.swing.JTextField;
-
 public class WordCapitalizedTextField
-  extends JTextField
+  extends TextField
 {
 	/**
 	 * 

@@ -10,12 +10,11 @@ import java.awt.Insets;
 import java.awt.Label;
 import java.awt.List;
 import java.awt.Panel;
+import java.awt.TextField;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
-
-import javax.swing.JTextField;
 
 import odt.of.util.CapitalizedTextField;
 import odt.of.util.DigitOnlyTextField;
@@ -35,11 +34,11 @@ class PaperConfigPanel
 	static final int FREQUENCY = 3;
 	static final int TEXT_FIELDS = 3;
 	static final String[] fieldNames = { "Paper Abbreviation", "Paper Location", "Days in Previous List", "Paper Frequency" };
-	JTextField[] fields;
+	TextField[] fields;
 	Choice frequencyChoice;
 	List editAutoCities;
 	EditConfigDialog dialog;
-	JTextField acField;
+	TextField acField;
   
 	public boolean isValidForm(boolean paramBoolean)
 	{
@@ -67,7 +66,7 @@ class PaperConfigPanel
 		GridBagLayout localGridBagLayout = new GridBagLayout();
 		GridBagConstraints localGridBagConstraints = new GridBagConstraints();
 		this.dialog = paramEditConfigDialog;
-		this.fields = new JTextField[fieldNames.length];
+		this.fields = new TextField[fieldNames.length];
 		setLayout(localGridBagLayout);
 		localGridBagConstraints.fill = 2;
 		localGridBagConstraints.insets = new Insets(0, 5, 5, 5);
@@ -75,7 +74,7 @@ class PaperConfigPanel
 		add(localLabel = new Label(fieldNames[0], 0));
 		localGridBagConstraints.gridwidth = -1;
 		localGridBagLayout.setConstraints(localLabel, localGridBagConstraints);
-		add(this.fields[0] = new JTextField("", 20));
+		add(this.fields[0] = new TextField("", 20));
 		this.fields[0].addKeyListener(new DialogCommandListener(paramEditConfigDialog, 0));
 		localGridBagConstraints.gridwidth = 0;
 		localGridBagLayout.setConstraints(this.fields[0], localGridBagConstraints);

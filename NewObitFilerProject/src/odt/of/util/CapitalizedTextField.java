@@ -1,14 +1,13 @@
 package odt.of.util;
 import java.awt.List;
+import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
-import javax.swing.JTextField;
 
 import odt.of.main.ObituaryFiler;
 
 public class CapitalizedTextField
-  extends JTextField
+  extends TextField
 {
   /**
 	 * 
@@ -44,7 +43,15 @@ public class CapitalizedTextField
 			paramKeyEvent.consume();
 		}
 	}
-    
+ 
+	public void keyReleased(KeyEvent paramKeyEvent)
+	{
+		if ( isConsumeKey() )
+		{
+			paramKeyEvent.consume();
+		}
+	}
+
     public void keyPressed(KeyEvent paramKeyEvent)
     {
 		setConsumeKey(false);
@@ -52,12 +59,13 @@ public class CapitalizedTextField
       char c1 = paramKeyEvent.getKeyChar();
       if ((c1 == ',') || (c1 == ';') || (c1 == '.') || ((c1 == '"') && (!CapitalizedTextField.this.allowQuotes)))
       {
-        paramKeyEvent.consume();
-        return;
+    	  setConsumeKey(true);
+    	  paramKeyEvent.consume();
+    	  return;
       }
       int i = paramKeyEvent.getKeyCode();
       if ((i < 65) || (i > 90)) {
-        return;
+    	  return;
       }
       char c2;
       if (paramKeyEvent.isControlDown())

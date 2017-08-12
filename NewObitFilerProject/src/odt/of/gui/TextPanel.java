@@ -6,7 +6,7 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.Label;
 import java.awt.Panel;
-import javax.swing.JTextField;
+import java.awt.TextField;
 
 import odt.of.main.ObituaryFiler;
 import odt.of.util.AutoCityTextField;
@@ -21,11 +21,12 @@ class TextPanel
 	 * 
 	 */
 	private static final long serialVersionUID = -7306899983613882363L;
-	static final int FIELDS = 10;
+	static final int ODTFIELDS = 10;
+
 	static final String[] fieldNames = { "Last Name", "First and Middle Names", "Maiden Name", "Other Last Names", "Nickname", "Age", "City of Birth", "State/Country of Birth", "City of Death", "State/Country of Death" };
 	ObituaryFiler app;
 	Label[] label;
-	JTextField[] field;
+	TextField[] field;
 	Checkbox aCCheckbox;
   
 	public void updateConfigChanges()
@@ -39,7 +40,7 @@ class TextPanel
 			this.label[i].setFont(localFont);
 			this.label[i].invalidate();
 			i++;
-		} while (i < FIELDS);
+		} while (i < ODTFIELDS );
 		
 		this.aCCheckbox.setFont(localFont);
 		this.aCCheckbox.invalidate();
@@ -49,7 +50,7 @@ class TextPanel
 	{
 		this.app = paramObituaryFiler;
 		this.label = new Label[10];
-		this.field = new JTextField[10];
+		this.field = new TextField[10];
 		this.aCCheckbox = new Checkbox();
 		GridBagLayout localGridBagLayout = new GridBagLayout();
 		setLayout(localGridBagLayout);
@@ -89,7 +90,7 @@ class TextPanel
 			localGridBagConstraints.gridwidth = 0;
 			localGridBagLayout.setConstraints(this.field[i], localGridBagConstraints);
 			i++;
-		} while (i < FIELDS);
+		} while (i < ODTFIELDS);
 		Label localLabel;
 		add(localLabel = new Label("", 0));
 		localGridBagConstraints.gridwidth = -1;
@@ -110,7 +111,7 @@ class TextPanel
 			this.field[i].setText(" ");
 			this.field[i].setText("");			
 			i++;
-		} while (i < FIELDS);
+		} while (i < ODTFIELDS);
 	}
   
 	public void enableComponents(boolean paramBoolean)
@@ -120,7 +121,7 @@ class TextPanel
 		{
 			this.field[i].setEnabled(paramBoolean);
 			i++;
-		} while (i < FIELDS);
+		} while (i < ODTFIELDS);
 		
 		this.aCCheckbox.setEnabled(paramBoolean);
 	}

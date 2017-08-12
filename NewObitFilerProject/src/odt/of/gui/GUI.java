@@ -90,7 +90,6 @@ public class GUI
 		Dimension localDimension1 = Toolkit.getDefaultToolkit().getScreenSize();
 		Dimension localDimension2 = this.mainFrame.getSize();
 		this.mainFrame.setLocation((localDimension1.width - localDimension2.width) / 2, (localDimension1.height - localDimension2.height) / 2);
-//		this.mainFrame.show();
 		this.mainFrame.setVisible(true);
 		this.mainFrame.addWindowListener(new CommandListener(0, paramObituaryFiler));
 	}

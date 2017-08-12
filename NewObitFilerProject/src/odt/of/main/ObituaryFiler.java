@@ -43,7 +43,8 @@ public class ObituaryFiler
 	static final int BIRTHSTATE = 7;
 	static final int CITY = 8;
 	static final int STATE = 9;
-	static final int FIELDS = 10;
+	static final int ODTFIELDS = 10;
+
 	public static GUI gui;
 	public ObitEntryConfig config;
 	Vector<ObitEntry> todayObits;
