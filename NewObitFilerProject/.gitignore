@@ -2,3 +2,7 @@
 /build/
 /dist/
 /.DS_Store
+/.classpath
+/build.num
+/build.xml
+/nsis_build.log
