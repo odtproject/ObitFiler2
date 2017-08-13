@@ -5,5 +5,8 @@
 	<classpathentry kind="lib" path="C:/Users/Owner/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Owner/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Owner/Documents/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jars/ostermillerutils-1.08.02/ostermillerutils-1.08.02-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
