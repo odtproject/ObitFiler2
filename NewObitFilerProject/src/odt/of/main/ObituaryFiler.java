@@ -54,18 +54,6 @@ public class ObituaryFiler
 	StringSelection clipString;
 	String abbreviations;
 	DirectorySetup dirSetup;
-  
-	public void menuHelpAbout()
-	{
-		/* Get the version number for this */
-		String versionNumber = ObituaryFiler.class.getPackage().getImplementationVersion();
-
-		String str = "Obituary Filer 2 Version " + versionNumber + "\n";
-		str = str + "\nCopyright © 1996-1999 Michael Rice, All rights reserved.\n\n";
-		str = str + "Updated by Alice Ramsay - 2016.\n\n";
-
-		gui.doMessageBox(str);
-	}
 	
 	public static void main(String[] paramArrayOfString)
 	{
@@ -73,10 +61,48 @@ public class ObituaryFiler
 		gui = new GUI(localObituaryFiler);
 		localObituaryFiler.initialize();
 	}
+  
+	public void menuHelpAbout()
+	{
+		/* Get the version number for this */
+		String versionNumber = ObituaryFiler.class.getPackage().getImplementationVersion();
+
+		String str = "Obituary Filer 2 Version " + versionNumber + "\n";
+		str = str + "\nCopyright ï¿½ 1996-1999 Michael Rice, All rights reserved.\n\n";
+		str = str + "Updated by Alice Ramsay - 2016.\n\n";
+
+		gui.doMessageBox(str);
+	}
+	
+	public void menuHelpContents()
+	{
+		try {
+			Browser.displayURL("http://www.rootsweb.ancestry.com/~obituary/manual/obitfiler_help.html");
+		}
+		catch (IOException localIOException)
+		{
+			new ErrorLog(localIOException, "IOException in menuHelpContents");
+			
+			String str = "Online help unavailable at this time.";
+			gui.doMessageBox(str);
+		}
+	}
 
 	public void menuHelpAbbreviations()
 	{
-		gui.doMessageBox(this.abbreviations);
+//		gui.doMessageBox(this.abbreviations);
+		
+		try {
+			Browser.displayURL("http://www.rootsweb.ancestry.com/~obituary/abbrev.txt");
+		}
+		catch (IOException localIOException)
+		{
+			new ErrorLog(localIOException, "IOException in menuHelpContents");
+			
+			String str = "Online abbreviations unavailable at this time.";
+			gui.doMessageBox(str);
+		}
+
 	}
   
 	public void initialize()
@@ -542,20 +568,6 @@ public class ObituaryFiler
 	public void readToday()
 	{
 		this.todayObits = read(this.config.getCurrentDate());
-	}
-  
-	public void menuHelpContents()
-	{
-		try {
-			Browser.displayURL("http://www.rootsweb.ancestry.com/~obituary/manual/obitfiler_help.html");
-		}
-		catch (IOException localIOException)
-		{
-			new ErrorLog(localIOException, "IOException in menuHelpContents");
-			
-			String str = "Online help unavailable at this time.";
-			gui.doMessageBox(str);
-		}
 	}
   
 	public String processDirtyFiles()
