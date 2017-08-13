@@ -48,6 +48,7 @@ public class AutoCityTextField
 		}
 		public void keyPressed(KeyEvent paramKeyEvent)
 		{
+			setConsumeKey(false);
 			String str1 = AutoCityTextField.this.getText();
 			int i = AutoCityTextField.this.getSelectionStart();
 			int j = paramKeyEvent.getKeyCode();
@@ -99,6 +100,8 @@ public class AutoCityTextField
 				AutoCityTextField.this.setText(str3 + c1 + str4);
 				AutoCityTextField.this.setCaretPosition(i + 1);
 			}
+			
+			setConsumeKey(true);
 			paramKeyEvent.consume();
 		}
 		
