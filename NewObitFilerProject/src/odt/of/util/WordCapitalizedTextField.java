@@ -40,23 +40,29 @@ public class WordCapitalizedTextField
 			int i = WordCapitalizedTextField.this.getSelectionStart();
 			int j = paramKeyEvent.getKeyCode();
 			
-			/* If an uppercase letter, then do nothingl */
+			/* If not a letter key, then do nothing */
 			if ((j < 65) || (j > 90))
 			{
 				return;
 			}
+			
 			char c1;
 
 			/* If the control key is down, then the user wants it to be lowercase */
-			if (paramKeyEvent.isControlDown()) {
+			if (paramKeyEvent.isControlDown() || paramKeyEvent.isMetaDown()) 
+			{
+				/* If the shift key is down, then they do want it uppercase */
 				if (paramKeyEvent.isShiftDown()) {
 					c1 = (char)(j - 65 + 65);
 				} else {
 					c1 = (char)(j - 65 + 97);					
 				}
 			}
-			else {
-				/* Otherwise, if it is the first character in the word, it should be capitalized */
+			else 
+			{
+				/* If it is the first character in the word, it should be capitalized.
+				 * Otherwise, leave it alone.
+				 */
 				char c2 = paramKeyEvent.getKeyChar();
 				if ((i == 0) || (str1.charAt(i - 1) == ' ') || (str1.charAt(i - 1) == '>')) {
 					c1 = Character.toUpperCase(c2);

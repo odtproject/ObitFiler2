@@ -6,12 +6,8 @@ import java.awt.event.KeyEvent;
 
 import odt.of.main.ObituaryFiler;
 
-public class CapitalizedTextField
-  extends TextField
+public class CapitalizedTextField extends TextField
 {
-  /**
-	 * 
-	 */
 	private static final long serialVersionUID = 6222402268791672261L;
 	
 	boolean allowQuotes;
@@ -23,11 +19,12 @@ public class CapitalizedTextField
     addKeyListener(new CapitalizedTextField.CapitalizedTextKeyAdapter(paramObituaryFiler, paramInt2));
   }
   
-  class CapitalizedTextKeyAdapter
-    extends KeyAdapter
+  class CapitalizedTextKeyAdapter extends KeyAdapter
   {
     ObituaryFiler app;
     int id;
+    
+    /* keep track of whether to consume the key entered */
 	private boolean consumeKey;
     
     public CapitalizedTextKeyAdapter(ObituaryFiler paramObituaryFiler, int paramInt)
@@ -64,26 +61,42 @@ public class CapitalizedTextField
     	  return;
       }
       int i = paramKeyEvent.getKeyCode();
+      
+      /* if it's not a letter key, do nothing */
       if ((i < 65) || (i > 90)) {
     	  return;
       }
       char c2;
-      if (paramKeyEvent.isControlDown())
+      
+      /* if the control or command key are down, the user wants it lowercase */
+      if (paramKeyEvent.isControlDown() || paramKeyEvent.isMetaDown())
       {
-        if (paramKeyEvent.isShiftDown()) {
+    	  /* If shift is down, it should be uppercase */
+        if (paramKeyEvent.isShiftDown()) 
+        {
           c2 = (char)(i - 65 + 65);
-        } else {
+        }
+        else 
+        {
           c2 = (char)(i - 65 + 97);
         }
       }
-      else {
+      else 
+      {
         c2 = Character.toUpperCase(c1);
       }
+      
+      /* Get the beginning and end of the current string in this
+       * field.
+       */
       int j = CapitalizedTextField.this.getSelectionStart();
       int k = CapitalizedTextField.this.getSelectionEnd();
       String str1 = CapitalizedTextField.this.getText();
       Object localObject;
       
+      /* If this is the Last Name field, display the closest match 
+       * to this entry in the list of previous obits.
+       */
       if (this.id == 0)
       {
         localObject = ObituaryFiler.gui.previousPanel.obitList;
@@ -98,13 +111,19 @@ public class CapitalizedTextField
           }
         }
       }
+      
+      /* The following code seems to allow the user to fix something
+       * in the current string, so we have marked the selection
+       * positions and also have the whole string.  This requires
+       * some reassembly of the string to include the new character
+       * that we are processing.
+       */
       localObject = str1.substring(0, j);
 
       String str2 = str1.substring(k, str1.length());
       String str3 = (String)localObject + c2 + str2;
       CapitalizedTextField.this.setText("");
       CapitalizedTextField.this.setText(str3);
-//      CapitalizedTextField.this.setText((String)localObject + c2 + str2);
       CapitalizedTextField.this.setCaretPosition(j + 1);
       
 		setConsumeKey(true);

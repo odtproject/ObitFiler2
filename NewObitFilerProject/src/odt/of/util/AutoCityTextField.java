@@ -46,17 +46,24 @@ public class AutoCityTextField
 				paramKeyEvent.consume();
 			}
 		}
+		
 		public void keyPressed(KeyEvent paramKeyEvent)
 		{
 			setConsumeKey(false);
 			String str1 = AutoCityTextField.this.getText();
 			int i = AutoCityTextField.this.getSelectionStart();
 			int j = paramKeyEvent.getKeyCode();
+			
+			/* If not a letter, do nothing */
 			if ((j < 65) || (j > 90)) {
 				return;
 			}
 			char c1;
-			if (paramKeyEvent.isControlDown())
+			
+			/* If the control or command key is down, the user wants it
+			 * to be lowercase.
+			 */
+			if (paramKeyEvent.isControlDown() || paramKeyEvent.isMetaDown())
 			{
 				if (paramKeyEvent.isShiftDown()) {
 					c1 = (char)(j - 65 + 65);
