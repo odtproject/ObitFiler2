@@ -84,7 +84,7 @@ public class GUI
 		this.mainFrame.setMenuBar(this.menuBar);
 		this.mainFrame.add("North", localPanel1);
 		this.mainFrame.add("Center", localPanel2);
-		this.mainFrame.setIconImage(Toolkit.getDefaultToolkit().getImage("dove_purple.gif"));
+		this.mainFrame.setIconImage(Toolkit.getDefaultToolkit().getImage(GUI.class.getResource("/odt/resources/dove_purple32.png")));
 		updateConfigChanges();
 		this.mainFrame.pack();
 		Dimension localDimension1 = Toolkit.getDefaultToolkit().getScreenSize();
