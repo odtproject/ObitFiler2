@@ -172,13 +172,13 @@ public class ObituaryFiler
 		this.previousObits = new Vector<ObitEntry>();
 		this.previousSelected = -1;
 		this.todaySelected = -1;
-		this.abbreviations = "";		
+//		this.abbreviations = "";		
 		
-		try
-		{
+//		try
+//		{
 			/* Use the ODT folder structure to find the abbreviations file.
 			 */
-			String filePathString = dirSetup.getLibFileString("abbrev.txt");
+/*			String filePathString = dirSetup.getLibFileString("abbrev.txt");
 			BufferedReader localBufferedReader = new BufferedReader(new FileReader(filePathString));
 			while (localBufferedReader.ready())
 			{
@@ -197,8 +197,10 @@ public class ObituaryFiler
 		{
 			new ErrorLog(localIOException, "Error reading abbreviation file.");
 		}
+*/
 	}
-  
+
+		
 	public void menuActionExport()
 	{
 		String msgString;
