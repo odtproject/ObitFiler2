@@ -67,11 +67,11 @@ public class ObituaryFiler
 		/* Get the version number for this */
 		String versionNumber = ObituaryFiler.class.getPackage().getImplementationVersion();
 
-		String str = "Obituary Filer 2 Version " + versionNumber + "\n";
-		str = str + "\nCopyright � 1996-1999 Michael Rice, All rights reserved.\n\n";
-		str = str + "Updated by Alice Ramsay - 2016.\n\n";
+		String message_str = "Obituary Filer 2 Version " + versionNumber + "\n";
+		message_str = message_str + "\nCopyright \u00a9 1996-1999 Michael Rice, All rights reserved.\n\n";
+		message_str = message_str + "Updated by Alice Ramsay - 2016.\n\n";
 
-		gui.doMessageBox(str);
+		JOptionPane.showMessageDialog(null, message_str, "About Obituary Filer 2", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	public void menuHelpContents()
@@ -83,26 +83,23 @@ public class ObituaryFiler
 		{
 			new ErrorLog(localIOException, "IOException in menuHelpContents");
 			
-			String str = "Online help unavailable at this time.";
-			gui.doMessageBox(str);
+			String message_str = "Online help unavailable at this time.";
+			JOptionPane.showMessageDialog(null, message_str, "Obituary Filer Help Menu Message", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 
 	public void menuHelpAbbreviations()
 	{
-//		gui.doMessageBox(this.abbreviations);
-		
 		try {
 			Browser.displayURL("http://www.rootsweb.ancestry.com/~obituary/abbrev.txt");
 		}
 		catch (IOException localIOException)
 		{
-			new ErrorLog(localIOException, "IOException in menuHelpContents");
+			new ErrorLog(localIOException, "IOException in menuHelpAbbreviations");
 			
-			String str = "Online abbreviations unavailable at this time.";
-			gui.doMessageBox(str);
+			String message_str = "Online abbreviations unavailable at this time.";
+			JOptionPane.showMessageDialog(null, message_str, "Obituary Filer Help Menu Message", JOptionPane.ERROR_MESSAGE);
 		}
-
 	}
   
 	public void initialize()
