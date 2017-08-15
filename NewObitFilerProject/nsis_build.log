@@ -3,16 +3,16 @@ See the file COPYING for license details.
 Credits can be found in the Users Manual.
 
 Command line defined: "VERSIONMAJ=1"
-Command line defined: "VERSIONMIN=2"
-Command line defined: "VERSIONBLD=8"
+Command line defined: "VERSIONMIN=3"
+Command line defined: "VERSIONBLD=7"
 Command line defined: "DISPLAYNAME=Obituary Filer 2"
 Command line defined: "EXE_NAME=ObituaryFiler2.exe"
-Command line defined: "PRODUCT_NAME=ObituaryFiler212"
+Command line defined: "PRODUCT_NAME=ObituaryFiler213"
 Command line defined: "APP_NAME=ObituaryFiler2"
 Command line defined: "FOLDER=.."
-Changing directory to: "C:\Users\Owner\workspace\NewObitFilerProject\nsis"
+Changing directory to: "C:\Users\Owner\GitObitFiler\NewObitFilerProject\nsis"
 
-Processing script file: "C:\Users\Owner\workspace\NewObitFilerProject\nsis\obitfiler2.nsi"
+Processing script file: "C:\Users\Owner\GitObitFiler\NewObitFilerProject\nsis\obitfiler2.nsi"
 Processing plugin dlls: "C:\Program Files (x86)\NSIS\Plugins\*.dll"
  - AdvSplash::show
  - Banner::destroy
@@ -210,14 +210,13 @@ Processing plugin dlls: "C:\Program Files (x86)\NSIS\Plugins\*.dll"
 !define: "PROGRAMFILE"="ObituaryFiler2.exe"
 !define: "ICON"="dove_purple.ico"
 !define: "ICONFULLPATH"="..\images\dove_purple.ico"
-!define: "GIFFILE"="..\images\dove_purple.gif"
 !define: "UNINSTNAME"="unObituaryFiler2.exe"
 !define: "PUBLISHER"="Obituary Daily Times"
 !define: "VERSIONMAJOR"="1"
-!define: "VERSIONMINOR"="2"
-!define: "VERSIONBUILD"="8"
-!define: "VERSIONSTRING"="ObituaryFiler212"
-!define: "VERSIONDOTTED"="1.2.8"
+!define: "VERSIONMINOR"="3"
+!define: "VERSIONBUILD"="7"
+!define: "VERSIONSTRING"="ObituaryFiler213"
+!define: "VERSIONDOTTED"="1.3.7"
 !define: "INSTALLSIZE"="136"
 !include: "C:\Program Files (x86)\NSIS\Include\MUI2.nsh"
 !include: "C:\Program Files (x86)\NSIS\Contrib\Modern UI 2\MUI2.nsh"
@@ -276,7 +275,7 @@ NSIS Modern User Interface version 2.0 - Copyright 2002-2009 Joost Verburg (C:\P
 !include: closed: "C:\Program Files (x86)\NSIS\Include\FileFunc.nsh"
 Name: "Obituary Filer 2"
 Icon: "..\images\dove_purple.ico"
-OutFile: "ObituaryFiler212ins.exe"
+OutFile: "ObituaryFiler213ins.exe"
 InstallDir: "$PROGRAMFILES\ObituaryFiler2"
 InstallRegKey: "HKCU\Software\ObituaryFiler2\"
 Var: "StartMenuFolder"
@@ -320,18 +319,17 @@ Quit
 FunctionEnd
 Section: ""
 SetOutPath: "$INSTDIR"
-File: "ObituaryFiler2.exe" [compress] 365173/478545 bytes
+File: "ObituaryFiler2.exe" [compress] 367276/480927 bytes
 File: "dove_purple.ico" [compress] 28581/102134 bytes
-File: "dove_purple.gif" [compress] 14583/14587 bytes
 WriteRegStr: HKLM\SOFTWARE\ObituaryFiler2\=$INSTDIR
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayName=Obituary Filer 2
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\UninstallString="$INSTDIR\unObituaryFiler2.exe"
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\InstallLocation="$INSTDIR"
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayIcon="$INSTDIR\dove_purple.ico"
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\Publisher=Obituary Daily Times
-WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayVersion=1.2.8
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayVersion=1.3.7
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\VersionMajor=1
-WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\VersionMinor=2
+WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\VersionMinor=3
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\NoModify=1
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\NoRepair=1
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\EstimatedSize=136
@@ -353,7 +351,7 @@ CreateDirectory: "$ODTDIR"
 Var: "LIBDIR"
 StrCpy $LIBDIR "$ODTDIR\lib" () ()
 SetOutPath: "$LIBDIR"
-File: "abbrev.txt" [compress] 7280/17644 bytes
+File: "abbrev.txt" [compress] 7296/17705 bytes
 CreateDirectory: "$ODTDIR\appdata"
 SectionEnd
 Section: "Uninstall"
@@ -366,7 +364,6 @@ Delete: "$SMPROGRAMS\$StartMenuFolder\ObituaryFiler2.lnk"
 RMDir: "$SMPROGRAMS\$StartMenuFolder"
 Delete: "$INSTDIR\ObituaryFiler2.exe"
 Delete: "$INSTDIR\dove_purple.ico"
-Delete: "$INSTDIR\..\images\dove_purple.gif"
 DeleteRegKey: HKLM\SOFTWARE\ObituaryFiler2
 DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2
 Delete: "$INSTDIR\unObituaryFiler2.exe"
@@ -380,18 +377,18 @@ Removing unused resources... Done!
 Generating language tables... Done!
 Generating uninstaller... Done!
 
-Output: "C:\Users\Owner\workspace\NewObitFilerProject\nsis\ObituaryFiler212ins.exe"
-Install: 6 pages (384 bytes), 2 sections (2096 bytes), 501 instructions (14028 bytes), 233 strings (3860 bytes), 1 language table (318 bytes).
+Output: "C:\Users\Owner\GitObitFiler\NewObitFilerProject\nsis\ObituaryFiler213ins.exe"
+Install: 6 pages (384 bytes), 2 sections (2096 bytes), 500 instructions (14000 bytes), 232 strings (3844 bytes), 1 language table (318 bytes).
 Uninstall: 3 pages (192 bytes), 
-1 section (1048 bytes), 65 instructions (1820 bytes), 108 strings (1565 bytes), 1 language table (250 bytes).
+1 section (1048 bytes), 64 instructions (1792 bytes), 107 strings (1535 bytes), 1 language table (250 bytes).
 Datablock optimizer saved 25009 bytes (~4.0%).
 
 Using zlib compression.
 
 EXE header size:              136704 / 35840 bytes
-Install code:                   4157 / 21062 bytes
-Install data:                 432910 / 746862 bytes
-Uninstall code+data:           30221 / 103741 bytes
-CRC (0xC1188D04):                  4 / 4 bytes
+Install code:                   4141 / 21018 bytes
+Install data:                 420442 / 734714 bytes
+Uninstall code+data:           30198 / 103718 bytes
+CRC (0x9C8B76F6):                  4 / 4 bytes
 
-Total size:                   603996 / 907509 bytes (66.5%)
+Total size:                   591489 / 895294 bytes (66.0%)

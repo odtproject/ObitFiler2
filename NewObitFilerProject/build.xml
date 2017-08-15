@@ -2,15 +2,23 @@
 <project default="create_run_jar" name="Create Runnable Jar for Project NewObitFilerProject">
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
-    <!--define folder properties-->
+	<!--It was substantially modified to build the jar, then wrap  -->
+	<!--it in something that will check for the correct JRE in     -->
+	<!--Windows, and finally generate an installer.                -->
+	
+	<!--To use this file, remember to update the version information -->
+	<!--when appropriate, and to update the JRE version in the launch4j -->
+	<!--.xml file when appropriate -->
 	
 	<!-- set up version information -->
 	<property name="version.maj" value="1" />
 	<property name="version.min" value="3" />
 	
+	<!-- set up variables for build location -->
     <property name="dir.buildfile" value="."/>
     <property name="dir.workspace" value="${dir.buildfile}/.."/>
 	
+	<!-- set up variables connected to name of tool -->
 	<property name="display_name" value="Obituary Filer 2"/>
 	<property name="app_name" value="ObituaryFiler2" />
 	<property name="product" value="${app_name}${version.maj}${version.min}" />
@@ -21,36 +29,46 @@
 	<property name="info" location="info" />
 	<property name="build" location="build" />
 
+	<!-- the output folder for the jar -->
+	<property name="dir.jarfile" value="${build}"/>
+
+	<!-- some actions depend on which target OS we are building for -->
+	<condition property="isMac">
+		  <os family="mac" />
+	</condition>
+	<condition property="isWindows">
+		    <os family="windows" />
+	</condition>
+
 	<!-- folders with stuff we need -->
-	<property name="lib" location="lib" />
+	<property name="lib" location="lib" />		
 	<property name="nsis" location="nsis" />
 	<property name="launch4j.dir" location="C:\Program Files (x86)\Launch4j" />
-	<property name="originfo.dir" location="C:\Users\Owner\ODT\lib" />
-	<property name="origimages.dir" location="C:\Users\Owner\Obits\NewTools\images\ObituaryFiler2" />
-
-	<property name="dir.jarfile" value="${build}"/>
+<!--	<property name="originfo.dir" location="C:\Users\Owner\ODT\lib" /> -->
+	<property name="origimages.dir" location="icons" />
 	
 	<target name="clean" description="Clean up leftover build products" >
 		<delete dir="${build}" />
-		<delete dir="${info}" />
+		<delete dir="${images}" />
+<!--		<delete dir="${info}" /> -->
 	</target>
 
 	<target name="init" depends="clean" description="Initialize folders and files" >
 		<tstamp />
 		<mkdir dir="${build}" />
 		<mkdir dir="${images}" />
-		<mkdir dir="${info}" />
+<!--		<mkdir dir="${info}" /> -->
 		<mkdir dir="${dist}" />
 		
 		<copy todir="${images}" >
 			<fileset dir="${origimages.dir}/" />
 		</copy>
 		
-		<copy todir="${info}" >
+<!--		<copy todir="${info}" >
 			<fileset dir="${originfo.dir}">
 				<include name="abbrev.txt" />				
 			</fileset>
-		</copy>
+		</copy> -->
 	</target>
 
     <target name="create_run_jar" depends="init" description="Create runnable jar" >
@@ -66,17 +84,19 @@
     		manifest="MANIFEST.MF" >
             
             <fileset dir="${dir.buildfile}/bin"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Owner/Java Programming/ostermillerutils-1.08.02/ostermillerutils-1.08.02.jar"/>
-       </jar>     
-     </target>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/ostermillerutils-1.08.02.jar"/>
+		</jar>     
+    </target>
 	
-	<target name="exe" depends="create_run_jar" description="Create wrapped exe file" >
-				<taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask"
+	<!-- Build the Windows exe file -->
+	<target name="win_exe" if="isWindows" depends="create_run_jar" description="Create wrapped exe file" >
+		<taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask"
 					classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar" />
-				<launch4j configfile="./l4j/obitfilerl4j.xml" />
-		</target>
-		
-		<target name="dist" depends="exe" description="Make installation package for distribution" >
+		<launch4j configfile="./l4j/obitfilerl4j.xml" />
+	</target>
+	
+	<!-- create the Windows installer -->
+	<target name="win_dist" if="isWindows" depends="win_exe" description="Make installation package for distribution" >
 			<taskdef name="nsis" classname="com.danielreese.nsisant.Task">
 				<classpath location="${lib}\nsisant-1.3.jar" />
 			</taskdef>

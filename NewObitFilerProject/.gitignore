@@ -8,3 +8,6 @@
 /nsis_build.log
 /mybuild.xml
 /newbuild.xml
+/images/
+/testbuild.xml
+/info/

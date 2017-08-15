@@ -6,7 +6,7 @@ There are no city abbreviations except as marked (city). There are others marked
 
 How to use:
 Include the abbreviation for the State, County, Political or Geographical region together with the Country abbreviation.
-EXCEPTIONS: In the case of the United States, only use the State's abbreviation, and in the case of Canada, only use the Province when given.
+EXCEPTIONS: For the United States, only use the State's abbreviation, and for Canada, only use the Province abbreviation.
 
 Location/Meaning -> Abbreviation
 ------------------------------------------------------
@@ -19,6 +19,7 @@ Aguascalientes - AGU MEX
 Akershus - AK NOR
 Alabama - AL
 Alaska - AK
+Alaska Territory - AT
 Albania - ALB
 Alberta - AB
 Alderney - ALD CHI
@@ -430,6 +431,7 @@ Monaghan - MOG IRL
 Mongolia - MNG
 Monmouthshire - MON WLS
 Montana - MT
+Montenegro - MNE
 Montgomeryshire - MGY WLS
 Montserrat - MSR
 Moravia - MAE AUT
@@ -625,6 +627,7 @@ Scotland - SCT
 Selkirkshire - SEL SCT
 Senegal - SEN
 Serbia - SER
+Serbia - SRB
 Serbia Yugoslavia - SER YUG
 Seychelles - SYC
 Shetland Isles - SHI SCT
@@ -688,6 +691,7 @@ Tasmania - TAS AUS
 Tayside - TAY SCT
 Telemark - TE NOR
 Tennessee - TN
+Territory of Alaska - AT
 Tessin - TI CHE
 Texas - TX
 Thailand - THA

@@ -8,7 +8,7 @@
 !define PROGRAMFILE "${EXE_NAME}"
 !define ICON dove_purple.ico
 !define ICONFULLPATH "${FOLDER}\images\${ICON}"
-!define GIFFILE "${FOLDER}\images\dove_purple.gif"
+;!define GIFFILE "${FOLDER}\images\dove_purple.gif"
 !define UNINSTNAME "un${APPNAME}.exe"
 !define PUBLISHER "Obituary Daily Times"
 
@@ -128,7 +128,7 @@ Section "" ; default section
 	; define what to install
 	File "${FOLDER}\build\${PROGRAMFILE}"
 	File "${ICONFULLPATH}"
-	File "${GIFFILE}"
+;	File "${GIFFILE}"
 	
 	; registry keys that Windows needs
 	WriteRegStr HKLM "SOFTWARE\${APPNAME}" "" "$INSTDIR"
@@ -212,7 +212,7 @@ Section Uninstall
 	; delete the program itself and the logo icon
 	Delete "$INSTDIR\${PROGRAMFILE}"
 	Delete "$INSTDIR\${ICON}"
-	Delete "$INSTDIR\${GIFFILE}"	
+;	Delete "$INSTDIR\${GIFFILE}"	
 
 	; delete registry keys
 	DeleteRegKey HKLM "SOFTWARE\${APPNAME}"
