@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="create_run_jar" name="Create Runnable Jar for Project NewObitFilerProject">
+<project default="create_run_jar" name="Create products for Project NewObitFilerProject" xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<!--Need JavaFX definitions for javapackager task -->
+	
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
 	<!--It was substantially modified to build the jar, then wrap  -->
@@ -8,7 +10,7 @@
 	
 	<!--To use this file, remember to update the version information -->
 	<!--when appropriate, and to update the JRE version in the launch4j -->
-	<!--.xml file when appropriate -->
+	<!--.xml file when appropriate -->	
 	
 	<!-- set up version information -->
 	<property name="version.maj" value="1" />
@@ -96,7 +98,7 @@
 	</target>
 	
 	<!-- create the Windows installer -->
-	<target name="win_dist" if="isWindows" depends="win_exe" description="Make installation package for distribution" >
+	<target name="win_dist" if="isWindows" depends="win_exe" description="Make installation package for Windows" >
 			<taskdef name="nsis" classname="com.danielreese.nsisant.Task">
 				<classpath location="${lib}\nsisant-1.3.jar" />
 			</taskdef>
@@ -110,11 +112,17 @@
 					<define name="PRODUCT_NAME" value="${product}" />
 					<define name="APP_NAME" value="${app_name}" />
 					<define name="FOLDER" value=".." />
-				</nsis>
+			</nsis>
 				
-				<copy file="${nsis}/${product}ins.exe" tofile="${dist}/${product}ins.exe" />
+			<copy file="${nsis}/${product}ins.exe" tofile="${dist}/${product}ins.exe" />
 				
-				<delete file="${nsis}/${product}ins.exe" />
-		</target>
+			<delete file="${nsis}/${product}ins.exe" />
+	</target>
+	
+	<target name="mac_dist" if="isMac" depends="create_run_jar" description="Make installation package for Mac" >
+        <taskdef resource="com/sun/javafx/tools/ant/antlib.xml"      
+                uri="javafx:com.sun.javafx.tools.ant"
+                classpath=".:${JAVA_HOME}/lib/ant-javafx.jar"/>  
+	</target>
 
 </project>
