@@ -80,8 +80,8 @@ public class EditConfigDialog
 	{
 		String str = this.app.config.getTagname();
 		int i = this.app.config.getFontNameIndex();
-		Integer localInteger1 = new Integer(this.app.config.getFontSize());
-		Integer localInteger2 = new Integer(this.app.config.getListEntries());
+		Integer localInteger1 = Integer.valueOf(this.app.config.getFontSize());
+		Integer localInteger2 = Integer.valueOf(this.app.config.getListEntries());
 		if (str == null)
 		{
 			str = "";
@@ -202,7 +202,7 @@ public class EditConfigDialog
 		Vector<String> localVector = this.paperConfigPanel.getTextFields();
 		String abbrev = localVector.elementAt(PaperConfigPanel.ABBREVIATION);
 		String location = localVector.elementAt(PaperConfigPanel.LOCATION);
-		int daysPrevious = new Integer(localVector.elementAt(PaperConfigPanel.DAYS_PREVIOUS)).intValue();
+		Integer daysPrevious = Integer.valueOf(localVector.elementAt(PaperConfigPanel.DAYS_PREVIOUS)).intValue();
 		int frequency = this.paperConfigPanel.frequencyChoice.getSelectedIndex();
 		this.app.config.addPaper(abbrev, location, frequency, daysPrevious, this.paperConfigPanel.editAutoCities.getItems());
 		return abbrev;
@@ -269,7 +269,7 @@ public class EditConfigDialog
 		{
 			this.paperConfigPanel.setField(0, this.app.config.getPaperAbbreviationAt(paramInt - 1));
 			this.paperConfigPanel.setField(1, this.app.config.getPaperLocationAt(paramInt - 1));
-			Integer localInteger = new Integer(this.app.config.getDaysPreviousAt(paramInt - 1));
+			Integer localInteger = Integer.valueOf(this.app.config.getDaysPreviousAt(paramInt - 1));
 			this.paperConfigPanel.setField(2, localInteger.toString());
 			this.paperConfigPanel.frequencyChoice.select(this.app.config.getFrequencyAt(paramInt - 1));
 			this.paperConfigPanel.fields[0].setEnabled(false);
@@ -349,9 +349,9 @@ public class EditConfigDialog
     	int j = this.generalConfigPanel.fontNameChoice.getSelectedIndex();
     	this.app.config.setFontNameIndex(j);
     	int k = this.app.config.getFontSize();
-    	int m = new Integer(localVector.elementAt(1)).intValue();
+    	Integer m = Integer.valueOf(localVector.elementAt(1)).intValue();
     	this.app.config.setFontSize(m);
-    	int n = new Integer(localVector.elementAt(2)).intValue();
+    	Integer n = Integer.valueOf(localVector.elementAt(2)).intValue();
     	this.app.config.setListEntries(n);
     	if ((i != j) || (k != m)) {
     		updateFonts();

@@ -75,7 +75,7 @@ public class ObituaryFiler
 	public void menuHelpContents()
 	{
 		try {
-			Browser.displayURL("http://www.rootsweb.ancestry.com/~obituary/manual/obitfiler_help.html");
+			Browser.displayURL("https://sites.rootsweb.com/~obituary/manual/obitfiler_help.html");
 		}
 		catch (IOException localIOException)
 		{
@@ -89,7 +89,7 @@ public class ObituaryFiler
 	public void menuHelpAbbreviations()
 	{
 		try {
-			Browser.displayURL("http://www.rootsweb.ancestry.com/~obituary/abbrev.txt");
+			Browser.displayURL("https://sites.rootsweb.com/~obituary/abbrev.txt");
 		}
 		catch (IOException localIOException)
 		{

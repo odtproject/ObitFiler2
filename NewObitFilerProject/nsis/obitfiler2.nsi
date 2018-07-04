@@ -221,7 +221,7 @@ Section Uninstall
 	; Delete the uninstaller itself
 	Delete "$INSTDIR\${UNINSTNAME}"
 
-	; Deelete the installation folder -- this will only work if it's empty
-	RMDir  "$INSTDIR"
+	; Delete the installation folder -- this will only work if it's empty
+	RMDir "$INSTDIR"
 
 SectionEnd # end of uninstall section

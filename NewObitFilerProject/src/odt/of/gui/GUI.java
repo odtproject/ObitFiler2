@@ -267,7 +267,7 @@ public class GUI
 		{
 			try
 			{
-				Integer localInteger = new Integer(str4);
+				Integer localInteger = Integer.valueOf(str4);
 				if (localInteger.intValue() > 199)
 				{
 					focusAndSelectTextField(5);

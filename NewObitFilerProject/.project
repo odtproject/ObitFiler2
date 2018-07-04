@@ -14,4 +14,10 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>NSIS_HOME</name>
+			<value>file:/C:/Program%20Files%20(x86)/NSIS</value>
+		</variable>
+	</variableList>
 </projectDescription>

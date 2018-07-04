@@ -1,209 +1,82 @@
-MakeNSIS v2.46 - Copyright 1995-2009 Contributors
+MakeNSIS v3.03 - Copyright 1999-2018 Contributors
 See the file COPYING for license details.
 Credits can be found in the Users Manual.
 
 Command line defined: "VERSIONMAJ=1"
-Command line defined: "VERSIONMIN=3"
-Command line defined: "VERSIONBLD=7"
+Command line defined: "VERSIONMIN=6"
+Command line defined: "VERSIONBLD=1"
 Command line defined: "DISPLAYNAME=Obituary Filer 2"
 Command line defined: "EXE_NAME=ObituaryFiler2.exe"
-Command line defined: "PRODUCT_NAME=ObituaryFiler213"
+Command line defined: "PRODUCT_NAME=ObituaryFiler216"
 Command line defined: "APP_NAME=ObituaryFiler2"
 Command line defined: "FOLDER=.."
-Changing directory to: "C:\Users\Owner\GitObitFiler\NewObitFilerProject\nsis"
+Changing directory to: "C:\Users\Alice\git\ObitFiler2\NewObitFilerProject\nsis"
 
-Processing script file: "C:\Users\Owner\GitObitFiler\NewObitFilerProject\nsis\obitfiler2.nsi"
-Processing plugin dlls: "C:\Program Files (x86)\NSIS\Plugins\*.dll"
- - AdvSplash::show
- - Banner::destroy
- - Banner::getWindow
- - Banner::show
- - BgImage::AddImage
- - BgImage::AddText
- - BgImage::Clear
- - BgImage::Destroy
- - BgImage::Redraw
- - BgImage::SetBg
- - BgImage::SetReturn
- - BgImage::Sound
- - Dialer::AttemptConnect
- - Dialer::AutodialHangup
- - Dialer::AutodialOnline
- - Dialer::AutodialUnattended
- - Dialer::GetConnectedState
- - INetC::get
- - INetC::head
- - INetC::post
- - INetC::put
- - InstallOptions::dialog
- - InstallOptions::initDialog
- - InstallOptions::show
- - InstallOptionsEx::dialog
- - InstallOptionsEx::initDialog
- - InstallOptionsEx::setFocus
- - InstallOptionsEx::show
- - InstallOptionsEx::skipValidation
- - InstallOptionsEx_legacy::dialog
- - InstallOptionsEx_legacy::initDialog
- - InstallOptionsEx_legacy::setFocus
- - InstallOptionsEx_legacy::show
- - InstallOptionsEx_legacy::skipValidation
- - InstallOptionsEx_newAPI::dialog
- - InstallOptionsEx_newAPI::initDialog
- - InstallOptionsEx_newAPI::setFocus
- - InstallOptionsEx_newAPI::show
- - InstallOptionsEx_newAPI::skipValidation
- - LangDLL::LangDialog
- - Math::Script
- - NSISArray::ArrayCount
- - NSISArray::ArrayExists
- - NSISArray::Clear
- - NSISArray::Concat
- - NSISArray::Copy
- - NSISArray::Cut
- - NSISArray::Debug
- - NSISArray::Delete
- - NSISArray::ErrorStyle
- - NSISArray::Exists
- - NSISArray::ExistsI
- - NSISArray::FreeUnusedMem
- - NSISArray::Join
- - NSISArray::New
- - NSISArray::Pop
- - NSISArray::Push
- - NSISArray::Put
- - NSISArray::ReDim
- - NSISArray::Read
- - NSISArray::ReadToStack
- - NSISArray::Reverse
- - NSISArray::Search
- - NSISArray::SearchI
- - NSISArray::SetAutoReDim
- - NSISArray::SetSize
- - NSISArray::Shift
- - NSISArray::SizeOf
- - NSISArray::Sort
- - NSISArray::Splice
- - NSISArray::Subtract
- - NSISArray::Swap
- - NSISArray::Unshift
- - NSISArray::Write
- - NSISArray::WriteList
- - NSISArray::WriteListC
- - NSISArray_legacy::ArrayCount
- - NSISArray_legacy::ArrayExists
- - NSISArray_legacy::Clear
- - NSISArray_legacy::Concat
- - NSISArray_legacy::Copy
- - NSISArray_legacy::Cut
- - NSISArray_legacy::Debug
- - NSISArray_legacy::Delete
- - NSISArray_legacy::ErrorStyle
- - NSISArray_legacy::Exists
- - NSISArray_legacy::ExistsI
- - NSISArray_legacy::FreeUnusedMem
- - NSISArray_legacy::Join
- - NSISArray_legacy::New
- - NSISArray_legacy::Pop
- - NSISArray_legacy::Push
- - NSISArray_legacy::Put
- - NSISArray_legacy::ReDim
- - NSISArray_legacy::Read
- - NSISArray_legacy::ReadToStack
- - NSISArray_legacy::Reverse
- - NSISArray_legacy::Search
- - NSISArray_legacy::SearchI
- - NSISArray_legacy::SetAutoReDim
- - NSISArray_legacy::SetSize
- - NSISArray_legacy::Shift
- - NSISArray_legacy::SizeOf
- - NSISArray_legacy::Sort
- - NSISArray_legacy::Splice
- - NSISArray_legacy::Subtract
- - NSISArray_legacy::Swap
- - NSISArray_legacy::Unload
- - NSISArray_legacy::Unshift
- - NSISArray_legacy::Write
- - NSISArray_legacy::WriteList
- - NSISArray_legacy::WriteListC
- - NSISArray_newAPI::ArrayCount
- - NSISArray_newAPI::ArrayExists
- - NSISArray_newAPI::Clear
- - NSISArray_newAPI::Concat
- - NSISArray_newAPI::Copy
- - NSISArray_newAPI::Cut
- - NSISArray_newAPI::Debug
- - NSISArray_newAPI::Delete
- - NSISArray_newAPI::ErrorStyle
- - NSISArray_newAPI::Exists
- - NSISArray_newAPI::ExistsI
- - NSISArray_newAPI::FreeUnusedMem
- - NSISArray_newAPI::Join
- - NSISArray_newAPI::New
- - NSISArray_newAPI::Pop
- - NSISArray_newAPI::Push
- - NSISArray_newAPI::Put
- - NSISArray_newAPI::ReDim
- - NSISArray_newAPI::Read
- - NSISArray_newAPI::ReadToStack
- - NSISArray_newAPI::Reverse
- - NSISArray_newAPI::Search
- - NSISArray_newAPI::SearchI
- - NSISArray_newAPI::SetAutoReDim
- - NSISArray_newAPI::SetSize
- - NSISArray_newAPI::Shift
- - NSISArray_newAPI::SizeOf
- - NSISArray_newAPI::Sort
- - NSISArray_newAPI::Splice
- - NSISArray_newAPI::Subtract
- - NSISArray_newAPI::Swap
- - NSISArray_newAPI::Unshift
- - NSISArray_newAPI::Write
- - NSISArray_newAPI::WriteList
- - NSISArray_newAPI::WriteListC
- - NSISdl::download
- - NSISdl::download_quiet
- - SkinnedControls::setskin
- - SkinnedControls::skinit
- - SkinnedControls::unskinit
- - Splash::show
- - StartMenu::Init
- - StartMenu::Select
- - StartMenu::Show
- - System::Alloc
- - System::Call
- - System::Copy
- - System::Free
- - System::Get
- - System::Int64Op
- - System::Store
- - TypeLib::GetLibVersion
- - TypeLib::Register
- - TypeLib::UnRegister
- - UserInfo::GetAccountType
- - UserInfo::GetName
- - UserInfo::GetOriginalAccountType
- - VPatch::GetFileCRC32
- - VPatch::GetFileMD5
- - VPatch::vpatchfile
- - nsDialogs::Create
- - nsDialogs::CreateControl
- - nsDialogs::CreateItem
- - nsDialogs::CreateTimer
- - nsDialogs::GetUserData
- - nsDialogs::KillTimer
- - nsDialogs::OnBack
- - nsDialogs::OnChange
- - nsDialogs::OnClick
- - nsDialogs::OnNotify
- - nsDialogs::SelectFileDialog
- - nsDialogs::SelectFolderDialog
- - nsDialogs::SetRTL
- - nsDialogs::SetUserData
- - nsDialogs::Show
- - nsExec::Exec
- - nsExec::ExecToLog
- - nsExec::ExecToStack
+Processing script file: "C:\Users\Alice\git\ObitFiler2\NewObitFilerProject\nsis\obitfiler2.nsi" (ACP)
+Processing default plugins: "C:\Program Files (x86)\NSIS\Plugins\x86-ansi\*.dll"
+ + Banner::destroy
+ + Banner::getWindow
+ + Banner::show
+ + BgImage::AddImage
+ + BgImage::AddText
+ + BgImage::Clear
+ + BgImage::Destroy
+ + BgImage::Redraw
+ + BgImage::SetBg
+ + BgImage::SetReturn
+ + BgImage::Sound
+ + Dialer::AttemptConnect
+ + Dialer::AutodialHangup
+ + Dialer::AutodialOnline
+ + Dialer::AutodialUnattended
+ + Dialer::GetConnectedState
+ + InstallOptions::dialog
+ + InstallOptions::initDialog
+ + InstallOptions::show
+ + LangDLL::LangDialog
+ + Math::Script
+ + StartMenu::Init
+ + StartMenu::Select
+ + StartMenu::Show
+ + System::Alloc
+ + System::Call
+ + System::Copy
+ + System::Free
+ + System::Get
+ + System::Int64Op
+ + System::Store
+ + System::StrAlloc
+ + TypeLib::GetLibVersion
+ + TypeLib::Register
+ + TypeLib::UnRegister
+ + UserInfo::GetAccountType
+ + UserInfo::GetName
+ + UserInfo::GetOriginalAccountType
+ + VPatch::GetFileCRC32
+ + VPatch::GetFileMD5
+ + VPatch::vpatchfile
+ + advsplash::show
+ + nsDialogs::Create
+ + nsDialogs::CreateControl
+ + nsDialogs::CreateItem
+ + nsDialogs::CreateTimer
+ + nsDialogs::GetUserData
+ + nsDialogs::KillTimer
+ + nsDialogs::OnBack
+ + nsDialogs::OnChange
+ + nsDialogs::OnClick
+ + nsDialogs::OnNotify
+ + nsDialogs::SelectFileDialog
+ + nsDialogs::SelectFolderDialog
+ + nsDialogs::SetRTL
+ + nsDialogs::SetUserData
+ + nsDialogs::Show
+ + nsExec::Exec
+ + nsExec::ExecToLog
+ + nsExec::ExecToStack
+ + nsisdl::download
+ + nsisdl::download_quiet
+ + splash::show
 
 !define: "APPNAME"="ObituaryFiler2"
 !define: "DISPNAME"="Obituary Filer 2"
@@ -213,69 +86,23 @@ Processing plugin dlls: "C:\Program Files (x86)\NSIS\Plugins\*.dll"
 !define: "UNINSTNAME"="unObituaryFiler2.exe"
 !define: "PUBLISHER"="Obituary Daily Times"
 !define: "VERSIONMAJOR"="1"
-!define: "VERSIONMINOR"="3"
-!define: "VERSIONBUILD"="7"
-!define: "VERSIONSTRING"="ObituaryFiler213"
-!define: "VERSIONDOTTED"="1.3.7"
+!define: "VERSIONMINOR"="6"
+!define: "VERSIONBUILD"="1"
+!define: "VERSIONSTRING"="ObituaryFiler216"
+!define: "VERSIONDOTTED"="1.6.1"
 !define: "INSTALLSIZE"="136"
-!include: "C:\Program Files (x86)\NSIS\Include\MUI2.nsh"
-!include: "C:\Program Files (x86)\NSIS\Contrib\Modern UI 2\MUI2.nsh"
-NSIS Modern User Interface version 2.0 - Copyright 2002-2009 Joost Verburg (C:\Program Files (x86)\NSIS\Contrib\Modern UI 2\MUI2.nsh:8)
-!define: "MUI_INCLUDED"=""
-!define: "MUI_SYSVERSION"="2.0"
-!define: "MUI_VERBOSE"="3"
+!include: "C:\Program Files (x86)\NSIS\Include\MUI2.nsh" (ACP)
+!include: "C:\Program Files (x86)\NSIS\Contrib\Modern UI 2\MUI2.nsh" (ACP)
+NSIS Modern User Interface version 2.1 - Copyright 2002-2018 Joost Verburg (C:\Program Files (x86)\NSIS\Contrib\Modern UI 2\MUI2.nsh:14)
 !include: closed: "C:\Program Files (x86)\NSIS\Contrib\Modern UI 2\MUI2.nsh"
 !include: closed: "C:\Program Files (x86)\NSIS\Include\MUI2.nsh"
-!include: "C:\Program Files (x86)\NSIS\Include\LogicLib.nsh"
+!include: "C:\Program Files (x86)\NSIS\Include\LogicLib.nsh" (ACP)
 !include: closed: "C:\Program Files (x86)\NSIS\Include\LogicLib.nsh"
-!include: "C:\Program Files (x86)\NSIS\Include\FileFunc.nsh"
-!define: "FILEFUNC_INCLUDED"=""
-!include: "C:\Program Files (x86)\NSIS\Include\Util.nsh"
-!include: closed: "C:\Program Files (x86)\NSIS\Include\Util.nsh"
-!define: "Locate"="!insertmacro LocateCall"
-!define: "un.Locate"="!insertmacro LocateCall"
-!define: "GetSize"="!insertmacro GetSizeCall"
-!define: "un.GetSize"="!insertmacro GetSizeCall"
-!define: "DriveSpace"="!insertmacro DriveSpaceCall"
-!define: "un.DriveSpace"="!insertmacro DriveSpaceCall"
-!define: "GetDrives"="!insertmacro GetDrivesCall"
-!define: "un.GetDrives"="!insertmacro GetDrivesCall"
-!define: "GetTime"="!insertmacro GetTimeCall"
-!define: "un.GetTime"="!insertmacro GetTimeCall"
-!define: "GetFileAttributes"="!insertmacro GetFileAttributesCall"
-!define: "un.GetFileAttributes"="!insertmacro GetFileAttributesCall"
-!define: "GetFileVersion"="!insertmacro GetFileVersionCall"
-!define: "un.GetFileVersion"="!insertmacro GetFileVersionCall"
-!define: "GetExeName"="!insertmacro GetExeNameCall"
-!define: "un.GetExeName"="!insertmacro GetExeNameCall"
-!define: "GetExePath"="!insertmacro GetExePathCall"
-!define: "un.GetExePath"="!insertmacro GetExePathCall"
-!define: "GetParameters"="!insertmacro GetParametersCall"
-!define: "un.GetParameters"="!insertmacro GetParametersCall"
-!define: "GetOptions"="!insertmacro GetOptionsCall"
-!define: "un.GetOptions"="!insertmacro GetOptionsCall"
-!define: "GetOptionsS"="!insertmacro GetOptionsSCall"
-!define: "un.GetOptionsS"="!insertmacro GetOptionsSCall"
-!define: "GetRoot"="!insertmacro GetRootCall"
-!define: "un.GetRoot"="!insertmacro GetRootCall"
-!define: "GetParent"="!insertmacro GetParentCall"
-!define: "un.GetParent"="!insertmacro GetParentCall"
-!define: "GetFileName"="!insertmacro GetFileNameCall"
-!define: "un.GetFileName"="!insertmacro GetFileNameCall"
-!define: "GetBaseName"="!insertmacro GetBaseNameCall"
-!define: "un.GetBaseName"="!insertmacro GetBaseNameCall"
-!define: "GetFileExt"="!insertmacro GetFileExtCall"
-!define: "un.GetFileExt"="!insertmacro GetFileExtCall"
-!define: "BannerTrimPath"="!insertmacro BannerTrimPathCall"
-!define: "un.BannerTrimPath"="!insertmacro BannerTrimPathCall"
-!define: "DirState"="!insertmacro DirStateCall"
-!define: "un.DirState"="!insertmacro DirStateCall"
-!define: "RefreshShellIcons"="!insertmacro RefreshShellIconsCall"
-!define: "un.RefreshShellIcons"="!insertmacro RefreshShellIconsCall"
+!include: "C:\Program Files (x86)\NSIS\Include\FileFunc.nsh" (ACP)
 !include: closed: "C:\Program Files (x86)\NSIS\Include\FileFunc.nsh"
 Name: "Obituary Filer 2"
 Icon: "..\images\dove_purple.ico"
-OutFile: "ObituaryFiler213ins.exe"
+OutFile: "ObituaryFiler216ins.exe"
 InstallDir: "$PROGRAMFILES\ObituaryFiler2"
 InstallRegKey: "HKCU\Software\ObituaryFiler2\"
 Var: "StartMenuFolder"
@@ -305,8 +132,8 @@ Var: "StartMenuFolder"
 Function: ".onInit"
 SetShellVarContext: all
 !insertmacro: VerifyUserIsAdmin
-File: "UserInfo.dll"->"$PLUGINSDIR\UserInfo.dll" [compress] 1336/4096 bytes
-Plugin Command: GetAccountType
+File: "UserInfo.dll"->"$PLUGINSDIR\UserInfo.dll" [compress] 1328/4096 bytes
+Plugin command: GetAccountType
 Pop: $0
 !insertmacro: _If
 !insertmacro: end of _If
@@ -319,17 +146,17 @@ Quit
 FunctionEnd
 Section: ""
 SetOutPath: "$INSTDIR"
-File: "ObituaryFiler2.exe" [compress] 367276/480927 bytes
-File: "dove_purple.ico" [compress] 28581/102134 bytes
+File: "ObituaryFiler2.exe" [compress] 366008/476343 bytes
+File: "dove_purple.ico" [compress] 28424/102134 bytes
 WriteRegStr: HKLM\SOFTWARE\ObituaryFiler2\=$INSTDIR
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayName=Obituary Filer 2
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\UninstallString="$INSTDIR\unObituaryFiler2.exe"
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\InstallLocation="$INSTDIR"
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayIcon="$INSTDIR\dove_purple.ico"
 WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\Publisher=Obituary Daily Times
-WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayVersion=1.3.7
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\DisplayVersion=1.6.1
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\VersionMajor=1
-WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\VersionMinor=3
+WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\VersionMinor=6
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\NoModify=1
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\NoRepair=1
 WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ObituaryFiler2\EstimatedSize=136
@@ -337,12 +164,12 @@ WriteUninstaller: "$INSTDIR\unObituaryFiler2.exe"
 !insertmacro: MUI_STARTMENU_WRITE_BEGIN
 !insertmacro: end of MUI_STARTMENU_WRITE_BEGIN
 CreateDirectory: "$SMPROGRAMS\$StartMenuFolder"
-CreateShortCut: "$SMPROGRAMS\$StartMenuFolder\ObituaryFiler2.lnk"->"$INSTDIR\ObituaryFiler2.exe"  icon:$INSTDIR\dove_purple.ico,0, showmode=0x0, hotkey=0x0, comment=
-CreateShortCut: "$SMPROGRAMS\$StartMenuFolder\Uninstall.lnk"->"$INSTDIR\unObituaryFiler2.exe"  icon:,0, showmode=0x0, hotkey=0x0, comment=
+CreateShortcut: "$SMPROGRAMS\$StartMenuFolder\ObituaryFiler2.lnk"->"$INSTDIR\ObituaryFiler2.exe"  icon:$INSTDIR\dove_purple.ico,0, nwd=0, showmode=0x0, hotkey=0x0, comment=
+CreateShortcut: "$SMPROGRAMS\$StartMenuFolder\Uninstall.lnk"->"$INSTDIR\unObituaryFiler2.exe"  icon:,0, nwd=0, showmode=0x0, hotkey=0x0, comment=
 !insertmacro: MUI_STARTMENU_WRITE_END
 !insertmacro: end of MUI_STARTMENU_WRITE_END
 SetOutPath: "$DESKTOP"
-CreateShortCut: "$DESKTOP\ObituaryFiler2.lnk"->"$INSTDIR\ObituaryFiler2.exe"  icon:$INSTDIR\dove_purple.ico,0, showmode=0x0, hotkey=0x0, comment=
+CreateShortcut: "$DESKTOP\ObituaryFiler2.lnk"->"$INSTDIR\ObituaryFiler2.exe"  icon:$INSTDIR\dove_purple.ico,0, nwd=0, showmode=0x0, hotkey=0x0, comment=
 SectionEnd
 Section: "UserSetup"
 Var: "ODTDIR"
@@ -351,7 +178,7 @@ CreateDirectory: "$ODTDIR"
 Var: "LIBDIR"
 StrCpy $LIBDIR "$ODTDIR\lib" () ()
 SetOutPath: "$LIBDIR"
-File: "abbrev.txt" [compress] 7296/17705 bytes
+File: "abbrev.txt" [compress] 7261/17705 bytes
 CreateDirectory: "$ODTDIR\appdata"
 SectionEnd
 Section: "Uninstall"
@@ -370,25 +197,24 @@ Delete: "$INSTDIR\unObituaryFiler2.exe"
 RMDir: "$INSTDIR"
 SectionEnd
 
-Processed 1 file, writing output:
+Processed 1 file, writing output (x86-ansi):
 Adding plug-ins initializing function... Done!
 Processing pages... Done!
 Removing unused resources... Done!
 Generating language tables... Done!
 Generating uninstaller... Done!
 
-Output: "C:\Users\Owner\GitObitFiler\NewObitFilerProject\nsis\ObituaryFiler213ins.exe"
-Install: 6 pages (384 bytes), 2 sections (2096 bytes), 500 instructions (14000 bytes), 232 strings (3844 bytes), 1 language table (318 bytes).
-Uninstall: 3 pages (192 bytes), 
-1 section (1048 bytes), 64 instructions (1792 bytes), 107 strings (1535 bytes), 1 language table (250 bytes).
-Datablock optimizer saved 25009 bytes (~4.0%).
+Output: "C:\Users\Alice\git\ObitFiler2\NewObitFilerProject\nsis\ObituaryFiler216ins.exe"
+Install: 5 pages (320 bytes), 2 sections (4144 bytes), 460 instructions (12880 bytes), 227 strings (3774 bytes), 1 language table (318 bytes).
+Uninstall: 2 pages (192 bytes), 1 section (2072 bytes), 64 instructions (1792 bytes), 106 strings (1538 bytes), 1 language table (250 bytes).
+Datablock optimizer saved 1888 bytes (~0.3%).
 
 Using zlib compression.
 
-EXE header size:              136704 / 35840 bytes
-Install code:                   4141 / 21018 bytes
-Install data:                 420442 / 734714 bytes
-Uninstall code+data:           30198 / 103718 bytes
-CRC (0x9C8B76F6):                  4 / 4 bytes
+EXE header size:              138752 / 37888 bytes
+Install code:                   3992 / 19828 bytes
+Install data:                 419661 / 682494 bytes
+Uninstall code+data:           30039 / 103716 bytes
+CRC (0xA29BC5B5):                  4 / 4 bytes
 
-Total size:                   591489 / 895294 bytes (66.0%)
+Total size:                   592448 / 843930 bytes (70.2%)
