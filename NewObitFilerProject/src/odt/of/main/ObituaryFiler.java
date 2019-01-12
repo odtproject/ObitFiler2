@@ -210,10 +210,10 @@ public class ObituaryFiler
 		}
 		
 		Clipboard localClipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-		String str1 = processDirtyFiles();
-		this.clipString = new StringSelection(str1);
+		String stringOfEntries = processDirtyFiles();
+		this.clipString = new StringSelection(stringOfEntries);
 		localClipboard.setContents(this.clipString, this.clipString);
-		String filePathString = writeSentFile(str1);
+		String filePathString = writeSentFile(stringOfEntries);
 		msgString = "All unsent entries have been stored in the system ";
 		msgString = msgString + "clipboard.\nOpen your email program and paste them ";
 		msgString = msgString + "in now.\n\n";
@@ -495,7 +495,7 @@ public class ObituaryFiler
 						i = 1;
 						
 						/* AJR: added this return. */
-						return filePathString; 
+						return sentObitsFile.toString();
 						
 				} /* end of if sentObitsFile does not exist */
 				
@@ -557,7 +557,8 @@ public class ObituaryFiler
 		{
 			new ErrorLog(localIOException, "IOException in writeToday");
 		}
-		catch ( InvalidPathException ip ) {
+		catch ( InvalidPathException ip ) 
+		{
 			System.err.println("Error writing Today obits: " + ip.getMessage());
 		}
 	}
